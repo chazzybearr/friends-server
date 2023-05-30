@@ -57,9 +57,6 @@ int create_user(const char *name, User **user_ptr_add) {
 /*
  * Return a pointer to the user with this name in
  * the list starting with head. Return NULL if no such user exists.
- *
- * NOTE: You'll likely need to cast a (const User *) to a (User *)
- * to satisfy the prototype without warnings.
  */
 User *find_user(const char *name, const User *head) {
     while (head != NULL && strcmp(name, head->name) != 0) {
@@ -114,7 +111,6 @@ char *list_users(const User *curr) {
  *   - 3 if the same user is passed in twice.
  *   - 4 if at least one user does not exist.
  *
- * Do not modify either user if the result is a failure.
  * NOTE: If multiple errors apply, return the *largest* error code that applies.
  */
 int make_friends(const char *name1, const char *name2, User *head) {
@@ -191,8 +187,6 @@ char *print_post(const Post *post) {
 
 /*
  * Print a user profile.
- * For an example of the required output format, see the example output
- * linked from the handout.
  * Return:
  *   - 0 on success.
  *   - 1 if the user is NULL.
@@ -267,11 +261,6 @@ char *print_user(const User *user) {
  * containing the given contents, IF the users are friends.
  *
  * Insert the new post at the *front* of the user's list of posts.
- *
- * Use the 'time' function to store the current time.
- *
- * 'contents' is a pointer to heap-allocated memory - you do not need
- * to allocate more memory to store the contents of the post.
  *
  * Return:
  *   - 0 on success
