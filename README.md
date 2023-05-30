@@ -2,9 +2,10 @@
 A network program written in C where clients can connect and issue friends commands.
 
 ## Table of Contents
-1. [Installation](#Installation)
-2. [Usage](Usage)
-3. [Commands](Commands)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Commands](#commands)
 
 ## Description
 - The motivation behind building this project was to develop a simple messaging tool for efficient and user-friendly 
